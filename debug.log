@@ -1,0 +1,6 @@
+[1213/084938.206:ERROR:directory_reader_win.cc(43)] FindFirstFile: 系統找不到指定的路徑。 (0x3)
+[1213/175844.163:ERROR:process_info.cc(329)] VirtualQueryEx: 存取被拒。 (0x5)
+[1213/175844.164:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[1213/175844.164:ERROR:process_memory_win.cc(39)] Failed to initialize ProcessInfo.
+[1213/181413.527:ERROR:directory_reader_win.cc(43)] FindFirstFile: 系統找不到指定的路徑。 (0x3)
+[1213/181819.229:ERROR:process_reader_win.cc(151)] SuspendThread: 存取被拒。 (0x5)
