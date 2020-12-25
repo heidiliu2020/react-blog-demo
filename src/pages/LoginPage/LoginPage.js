@@ -6,13 +6,11 @@ import { useHistory, Link } from "react-router-dom";
 import { AuthContext } from "../../contexts";
 import { LoadingContext } from "../../contexts";
 
-const Root = styled.div`
-  height: 100vh;
-`;
+const LoginWrapper = styled.div``;
 
 const LoginForm = styled.form`
-  max-width: 350px;
-  margin: 100px auto;
+  max-width: 400px;
+  margin: 160px auto;
   padding: 30px 50px;
   box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.4);
   border-radius: 6px;
@@ -79,6 +77,7 @@ const ErrorMessage = styled.div`
 const SubmitLoading = styled.div`
   font-weight: 700;
   color: #555;
+  padding: 10px;
 `;
 
 export default function LoginPage() {
@@ -130,7 +129,7 @@ export default function LoginPage() {
   };
 
   return (
-    <Root>
+    <LoginWrapper>
       <LoginForm onSubmit={handleSubmit}>
         <LoginTitle>登入</LoginTitle>
         {errorMessage && <ErrorMessage>{errorMessage}</ErrorMessage>}
@@ -162,6 +161,6 @@ export default function LoginPage() {
           )}
         </LoginSubmit>
       </LoginForm>
-    </Root>
+    </LoginWrapper>
   );
 }

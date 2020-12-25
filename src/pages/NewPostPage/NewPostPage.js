@@ -6,12 +6,10 @@ import { MEDIA_QUERY_MD } from "../../constants/style";
 import { addNewPost } from "../../WebAPI";
 import { LoadingContext } from "../../contexts";
 
-const Root = styled.div`
-  min-height: 100vh;
-`;
+const NewPostWrapper = styled.div``;
 
 const NewPostForm = styled.form`
-  max-width: 600px;
+  max-width: 700px;
   margin: 60px auto;
   padding: 40px 60px;
   box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.4);
@@ -69,6 +67,7 @@ const ErrorMessage = styled.div`
 const NewPostLoading = styled.div`
   font-weight: 700;
   color: #555;
+  padding: 9px;
 `;
 
 export default function NewPostPage() {
@@ -113,7 +112,7 @@ export default function NewPostPage() {
   };
 
   return (
-    <Root>
+    <NewPostWrapper>
       <NewPostForm onSubmit={handleNewPostSubmit}>
         {errorMessage && <ErrorMessage>{errorMessage}</ErrorMessage>}
         <NewPostLable>文章標題</NewPostLable>
@@ -137,6 +136,6 @@ export default function NewPostPage() {
           )}
         </NewPostSubmit>
       </NewPostForm>
-    </Root>
+    </NewPostWrapper>
   );
 }

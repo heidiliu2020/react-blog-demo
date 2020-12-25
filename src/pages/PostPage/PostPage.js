@@ -7,20 +7,25 @@ import { getPost } from "../../WebAPI";
 import { LoadingContext } from "../../contexts";
 import Loading from "../../components/Loading";
 
-const Root = styled.div`
-  min-height: 100vh;
+const PostWrapper = styled.div`
+  min-height: 800px;
+  padding: 80px 60px;
+
+  ${MEDIA_QUERY_MD} {
+    padding: 20px;
+  }
 `;
 
 const PostContainer = styled.div`
   padding: 60px;
   max-width: 900px;
-  margin: 00px auto;
+  margin: 0px auto;
   box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.4);
   border-radius: 6px;
   background: rgba(246, 246, 246, 0.9);
 
   ${MEDIA_QUERY_MD} {
-    padding: 40px 20px;
+    padding: 20px;
   }
 `;
 
@@ -63,10 +68,10 @@ export default function PostPage() {
     getPost(id)
       .then((post) => setPost(post[0]))
       .then(() => setIsLoading(false));
-  }, []);
+  }, [setIsLoading]);
 
   return (
-    <Root>
+    <PostWrapper>
       {isLoading ? (
         <Loading />
       ) : (
@@ -82,6 +87,6 @@ export default function PostPage() {
           <PostBody>{post && post.body}</PostBody>
         </PostContainer>
       )}
-    </Root>
+    </PostWrapper>
   );
 }

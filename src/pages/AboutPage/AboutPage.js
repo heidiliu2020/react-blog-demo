@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 
-const Root = styled.div`
-  min-height: 100vh;
+const AboutWrapper = styled.div`
+  height: 100vh;
 `;
 
 const AboutContainter = styled.div`
@@ -28,7 +28,7 @@ const AboutContent = styled.div`
 
 export default function AboutPage() {
   return (
-    <Root>
+    <AboutWrapper>
       <AboutContainter>
         <AboutTitle>關於我</AboutTitle>
         <AboutContent>
@@ -42,6 +42,6 @@ export default function AboutPage() {
           </p>
         </AboutContent>
       </AboutContainter>
-    </Root>
+    </AboutWrapper>
   );
 }

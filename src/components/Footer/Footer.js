@@ -1,8 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 
-const Root = styled.div``;
-
 const FooterContainer = styled.div`
   text-align: center;
   padding: 6px;
@@ -21,15 +19,17 @@ const FooterContainer = styled.div`
 
 export default function Footer() {
   return (
-    <Root>
-      <FooterContainer>
-        © 2020{" "}
-        <a href="https://github.com/heidiliu2020" target="_blank">
-          Heidi
-        </a>
-        {" | "}
-        Powered by React
-      </FooterContainer>
-    </Root>
+    <FooterContainer>
+      © 2020{" "}
+      <a
+        href="https://github.com/heidiliu2020"
+        rel="noreferrer"
+        target="_blank"
+      >
+        Heidi
+      </a>
+      {" ♥ "}
+      Powered by React
+    </FooterContainer>
   );
 }

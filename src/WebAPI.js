@@ -12,12 +12,6 @@ export const getPosts = () =>
 export const getPost = (id) =>
   fetch(`${BASE_URL}/posts?id=${id}&_expand=user`).then((res) => res.json());
 
-// 讀取最新五篇文章
-export const getFirstFivePosts = () =>
-  fetch(`${BASE_URL}/posts?_limit=5&_sort=createdAt&_order=desc`).then((res) =>
-    res.json()
-  );
-
 // 依照X頁數，讀取Y篇文章
 export const getLimitPosts = (page, limit) =>
   fetch(

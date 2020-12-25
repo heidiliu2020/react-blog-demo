@@ -4,17 +4,15 @@ import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
 import { MEDIA_QUERY_MD } from "../../constants/style";
-import { getFirstFivePosts } from "../../WebAPI";
+import { getLimitPosts } from "../../WebAPI";
 import { LoadingContext } from "../../contexts";
 import Loading from "../../components/Loading";
 
-const Root = styled.div`
-  min-height: 100vh;
-`;
+const HomePageWrapper = styled.div``;
 
 const PostsListContainer = styled.div`
-  max-width: 600px;
-  margin: 0 auto;
+  max-width: 700px;
+  margin: 50px auto;
   padding: 40px 60px;
   box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.4);
   border-radius: 10px;
@@ -113,7 +111,7 @@ export default function HomePage() {
 
   useEffect(() => {
     setIsLoading(true);
-    getFirstFivePosts()
+    getLimitPosts(1, 5)
       .then((posts) => setPosts(posts))
       .then(() => {
         setIsLoading(false);
@@ -121,7 +119,7 @@ export default function HomePage() {
   }, [setIsLoading]);
 
   return (
-    <Root>
+    <HomePageWrapper>
       {isLoading ? (
         <Loading />
       ) : (
@@ -133,6 +131,6 @@ export default function HomePage() {
           </ReadMore>
         </PostsListContainer>
       )}
-    </Root>
+    </HomePageWrapper>
   );
 }

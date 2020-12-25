@@ -10,12 +10,15 @@ import Pagination from "../../components/Pagination";
 import { LoadingContext, AuthContext } from "../../contexts";
 import Loading from "../../components/Loading";
 
-const Root = styled.div`
-  min-height: 100vh;
+const PostListWrapper = styled.div`
+  padding: 80px 30px;
+  ${MEDIA_QUERY_MD} {
+    padding: 30px;
+  }
 `;
 
 const PostsListContainer = styled.div`
-  max-width: 600px;
+  max-width: 700px;
   margin: 0 auto;
   padding: 40px 60px;
   box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.4);
@@ -84,7 +87,7 @@ function PostList({ post, handleDeletePost }) {
         [#{post.id}] {post.title}
       </PostTitle>
       <PostRight>
-        {user.id === post.userId && (
+        {user && user.id === post.userId && (
           <PostDeleteButton
             onClick={() => {
               handleDeletePost(post.id);
@@ -140,7 +143,7 @@ export default function PostListPage() {
   };
 
   return (
-    <Root>
+    <PostListWrapper>
       {isLoading ? (
         <Loading />
       ) : (
@@ -162,6 +165,6 @@ export default function PostListPage() {
           />
         </PostsListContainer>
       )}
-    </Root>
+    </PostListWrapper>
   );
 }

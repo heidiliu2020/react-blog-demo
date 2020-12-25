@@ -10,10 +10,6 @@ const HeaderContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   box-shadow: 0px 0px 8px rgb(199, 197, 197);
   padding: 0 32px;
@@ -28,7 +24,6 @@ const HeaderContainer = styled.div`
 
 const Brand = styled.div`
   font-size: 28px;
-  margin-right: 20px;
   white-space: nowrap;
   font-weight: 700;
 
@@ -36,6 +31,7 @@ const Brand = styled.div`
   a {
     text-decoration: none;
     color: #333;
+    padding: 8px;
   }
 
   ${MEDIA_QUERY_MD} {
@@ -108,11 +104,11 @@ export default function Header() {
   };
 
   return (
-    <HeaderContainer>
+    <HeaderContainer id="page-top">
       <Brand>
         {/* 加上 replace: 避免出現錯誤 -> "Hash history cannot PUSH the same path" */}
         <Link to="/" replace>
-          React 部落格
+          Heidi's Blog
         </Link>
       </Brand>
       <NavbarList>
