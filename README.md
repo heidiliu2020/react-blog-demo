@@ -2,7 +2,7 @@
 
 [Blog DEMO](https://heidiliu2020.github.io/react-blog-test/#/)
 
-![](https://i.imgur.com/rfS0yl2.gif)
+![](https://i.imgur.com/2qkNfak.png)
 
 ## 使用套件
 
