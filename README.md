@@ -2,6 +2,8 @@
 
 [Blog DEMO](https://heidiliu2020.github.io/react-blog-test/#/)
 
+![](https://i.imgur.com/rfS0yl2.gif)
+
 ## 使用套件
 
 - 使用 styled-components 以 JSX 語法撰寫 CSS 樣式
@@ -12,7 +14,7 @@
 - 使用 Prettier 套件統一程式碼格是
 - 使用 ESLint 套件檢查語法，統一 coding style
 
-##　學習筆記
+## 學習筆記
 
 - [[week 22] React：用 SPA 架構實作一個部落格（四）- 優化篇](https://heidiliu2020.github.io/2020/12/18/fe302-react-optimization/)
 - [[week 22] React：用 SPA 架構實作一個部落格（三）- 淺談測試](https://heidiliu2020.github.io/2020/12/17/fe302-react-test/)
