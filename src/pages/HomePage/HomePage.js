@@ -8,7 +8,11 @@ import { getLimitPosts } from "../../WebAPI";
 import { LoadingContext } from "../../contexts";
 import Loading from "../../components/Loading";
 
-const HomePageWrapper = styled.div``;
+const HomePageWrapper = styled.div`
+  ${MEDIA_QUERY_MD} {
+    padding: 30px;
+  }
+`;
 
 const PostsListContainer = styled.div`
   max-width: 700px;

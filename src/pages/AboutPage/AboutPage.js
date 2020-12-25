@@ -1,12 +1,18 @@
 import React from "react";
 import styled from "styled-components";
 
+import { MEDIA_QUERY_MD } from "../../constants/style";
+
 const AboutWrapper = styled.div`
   height: 100vh;
+
+  ${MEDIA_QUERY_MD} {
+    padding: 30px;
+  }
 `;
 
 const AboutContainter = styled.div`
-  max-width: 500px;
+  max-width: 550px;
   margin: 100px auto;
   padding: 40px;
   box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.4);
@@ -24,6 +30,10 @@ const AboutTitle = styled.h2`
 const AboutContent = styled.div`
   line-height: 1.5;
   font-size: 20px;
+
+  b {
+    font-weight: 700;
+  }
 `;
 
 export default function AboutPage() {
@@ -39,6 +49,10 @@ export default function AboutPage() {
           <p>
             因緣際會之下，從 2020 年 3 月開始學習寫程式，目前是 Lidemy
             程式導師計畫第四期的學生，目標在明年初成功轉職成為一名前端工程師。
+          </p>
+          <br />
+          <p>
+            <b>※ 部落格僅供測試用，所有帳號的密碼均為 Lidemy</b>
           </p>
         </AboutContent>
       </AboutContainter>

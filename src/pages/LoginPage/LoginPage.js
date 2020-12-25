@@ -9,7 +9,7 @@ import { LoadingContext } from "../../contexts";
 const LoginWrapper = styled.div``;
 
 const LoginForm = styled.form`
-  max-width: 400px;
+  max-width: 450px;
   margin: 160px auto;
   padding: 30px 50px;
   box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.4);
