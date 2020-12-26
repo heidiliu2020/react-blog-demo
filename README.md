@@ -8,7 +8,7 @@
 
 - 簡易會員系統：部落格串接的 [API Server](https://github.com/Lidemy/lidemy-student-json-api-server) 僅供測試用，密碼是以明文儲存，因此統一在後端把所有 user 的密碼改成 `Lidemy`
 - 文章列表：顯示分頁功能、單篇文章頁面
-- 發布文章功能：可輸入標題和內文，user 有權限修改本人的文章
+- 管理文章功能：可輸入標題和內文發布文章，user 有權限修改本人的文章
 - 回到頂部功能：點擊回到頂部按鈕、或是 URL 改變時均會回到網頁頂部
 
 ![](https://i.imgur.com/2qkNfak.png)
