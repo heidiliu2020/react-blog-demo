@@ -27,7 +27,7 @@
 
 ## 學習筆記
 
-- [[week 22] React：用 SPA 架構實作一個部落格（一）- Router](https://heidiliu2020.github.io/2020/12/16/fe302-react-router/)
-- [[week 22] React：用 SPA 架構實作一個部落格（二）- 身分驗證](https://heidiliu2020.github.io/2020/12/17/fe302-react-usecontext-usehistory/)
-- [[week 22] React：用 SPA 架構實作一個部落格（三）- 淺談測試](https://heidiliu2020.github.io/2020/12/17/fe302-react-test/)
-- [[week 22] React：用 SPA 架構實作一個部落格（四）- 優化篇](https://heidiliu2020.github.io/2020/12/18/fe302-react-optimization/)
+- [React：用 SPA 架構實作一個部落格（一）- Router](https://heidiliu2020.github.io/2020/12/16/fe302-react-router/)
+- [React：用 SPA 架構實作一個部落格（二）- 身分驗證](https://heidiliu2020.github.io/2020/12/17/fe302-react-usecontext-usehistory/)
+- [React：用 SPA 架構實作一個部落格（三）- 淺談測試](https://heidiliu2020.github.io/2020/12/17/fe302-react-test/)
+- [React：用 SPA 架構實作一個部落格（四）- 優化篇](https://heidiliu2020.github.io/2020/12/18/fe302-react-optimization/)
