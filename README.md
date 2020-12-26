@@ -1,6 +1,15 @@
 # React：用 SPA 架構實作一個部落格
 
+這是使用 React 實作的一個簡易部落格系統。
+
 [Blog DEMO](https://heidiliu2020.github.io/react-blog-test/#/)
+
+## 核心功能
+
+- 簡易會員系統：部落格串接的 [API Server](https://github.com/Lidemy/lidemy-student-json-api-server) 僅供測試用，密碼是以明文儲存，因此統一在後端把所有 user 的密碼改成 `Lidemy`
+- 文章列表：顯示分頁功能、單篇文章頁面
+- 發布文章功能：可輸入標題和內文，user 有權限修改本人的文章
+- 回到頂部功能：點擊回到頂部按鈕、或是 URL 改變時均會回到網頁頂部
 
 ![](https://i.imgur.com/2qkNfak.png)
 
@@ -13,6 +22,8 @@
 - 使用 PropTypes 進行型別檢查
 - 使用 Prettier 套件統一程式碼格是
 - 使用 ESLint 套件檢查語法，統一 coding style
+
+![](https://i.imgur.com/Wj5HqFa.png)
 
 ## 學習筆記
 
