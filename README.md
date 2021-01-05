@@ -20,7 +20,7 @@
 - 使用 react-spinners 套上 Loading 的效果
 - 使用 styled-reset 進行 CSS Reset
 - 使用 PropTypes 進行型別檢查
-- 使用 Prettier 套件統一程式碼格是
+- 使用 Prettier 套件統一程式碼格式
 - 使用 ESLint 套件檢查語法，統一 coding style
 
 ![](https://i.imgur.com/Wj5HqFa.png)
